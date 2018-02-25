@@ -36,8 +36,8 @@ FORMS += \
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../lib/ -lqscintilla2_qt5
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../lib/ -lqscintilla2_qt5d
 
-INCLUDEPATH += $$PWD/../
-DEPENDPATH += $$PWD/../
+INCLUDEPATH += $$PWD/../lib/
+DEPENDPATH += $$PWD/../lib/
 
 win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../lib/libqscintilla2_qt5.a
 else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../lib/libqscintilla2_qt5d.a
